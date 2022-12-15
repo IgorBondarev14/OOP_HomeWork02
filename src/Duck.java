@@ -17,7 +17,7 @@ public class Duck extends Animal implements Speakable, Runable, Flyable, Swimabl
     }
     @Override
     public String toString() {
-        return "Утка" + super.toString();
+        return "Утка " + super.toString();
     }
 
     @Override

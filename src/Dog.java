@@ -14,7 +14,7 @@ public class Dog extends Animal implements Speakable, Runable, Swimable{
     }
     @Override
     public String toString() {
-        return "Собака" + super.toString();
+        return "Собака " + super.toString();
     }
 
     @Override

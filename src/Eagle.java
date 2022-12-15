@@ -17,4 +17,9 @@ public class Eagle extends Animal implements Speakable, Runable, Flyable{
     public String speak() {
         return "AAAAAA";
     }
+
+    @Override
+    public String toString() {
+        return "Орёл " + super.toString();
+    }
 }

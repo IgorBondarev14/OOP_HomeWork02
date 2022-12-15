@@ -6,7 +6,7 @@ public class Main {
                 .addAnimal(new Dog("Шарик", "Эльза", 3))
                 .addAnimal(new Duck("Donald", "-", 2))
                 .addAnimal(new Eagle("?", "-", 2))
-                .addAnimal(new RedFish("Аркадий", "Андрейка", 0));
+                .addAnimal(new GoldFish("Аркадий", "Андрейка", 0));
         System.out.println(zoo);
         System.out.println(zoo.talk());
         System.out.println("Скорость самого быстрого животного (бег) - " + zoo.getChampionSpeed());
@@ -24,5 +24,7 @@ public class Main {
         for (Swimable i: zoo.getSwimable() ){
             System.out.println(i.swimSpeed());
         }
+        SaveManager saveManager = new SaveManager();
+        saveManager.save(zoo.getAnimals());
     }
 }
